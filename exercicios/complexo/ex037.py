@@ -7,7 +7,7 @@ while continuar != 1:
         numero = int(input("Digite o número a ser convertido: "))
 
         if numero <= 0:
-            print("O número informado é inválido. Utilize um valor inteiro positivo.")
+            print("\033[1:31mO número informado é inválido. Utilize um valor inteiro positivo.\033[m")
 
     opcao = 0
 
@@ -22,7 +22,7 @@ while continuar != 1:
         opcao = int(input("Selecione a opção desejada: "))
 
         if opcao != 1 and opcao != 2 and opcao != 3:
-            print("Opção informada inválida")
+            print("\033[1:31mInforme uma opção válida\033[m\n ")
 
     conversao = 0
     metodo = ""
@@ -37,11 +37,11 @@ while continuar != 1:
         conversao = hex(numero)[2:]
         metodo = " base hexadecimal"
     else:
-        print(f"A opção informada ({opcao}) é inválida!)")
-        print("Tente novamente mais tarde")
+        print("f\033[1:31mA opção informada ({opcao}) é inválida!\033[m\n ")
+        print("\033[1:31mTente novamente mais tarde\033[m\n ")
 
 
-    print(f"O número convertido para a {metodo}  é igual a {conversao}")
+    print(f"\033[1:32mO número convertido para a {metodo} é igual a {conversao}\033[m\n")
 
     while continuar != 0 and continuar != 1:
 
@@ -53,4 +53,4 @@ while continuar != 1:
         continuar = int(input("Qual a sua escolha? "))
 
         if continuar != 0 and continuar != 1:
-            print( "Informe uma opção válida\n ")
+            print("\033[1:31mInforme uma opção válida\033[m\n ")

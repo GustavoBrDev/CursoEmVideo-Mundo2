@@ -11,5 +11,5 @@ while True:
         break;
 
 
-print(f"O maior número é: {max(lista)}")
-print(f"O menor número é: {min(lista)}")
+print(f"\033[1:34mO maior número é: {max(lista)}\033[m")
+print(f"\033[1:34mO menor número é: {min(lista)}\033[m")

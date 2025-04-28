@@ -8,7 +8,7 @@ while escolha != 1:
         salario = float(input("Qual o seu salário? R$ "))
 
         if salario <= 0:
-            print("Insira um salário válido \n")
+            print("\033[1:31mInsira um salário válido\033[m\n")
 
     anos = 0
 
@@ -16,7 +16,7 @@ while escolha != 1:
         anos = int(input("Em quantos anos você pretende pagar a casa? "))
 
         if anos <= 0:
-            print("Insira uma quantidade de anos válida \n")
+            print("\033[1:31mInsira uma quantidade de anos válida \033[m\n")
 
     valor = 0
 
@@ -24,7 +24,7 @@ while escolha != 1:
         valor = float(input("Qual o valor da casa? "))
 
         if valor <= 0:
-            print("Insira um valor válido \n")
+            print("\033[1:31mInsira um valor válido\033[m\n")
 
     parcela = valor / (anos * 12);
 
@@ -34,7 +34,7 @@ while escolha != 1:
     else:
         print(f"O empréstimo com um valor de parcela de R${parcela:.2f} foi aprovado")
 
-    print("Consultoria realizada com sucesso!")
+    print("\033[1:32mConsultoria realizada com sucesso!\033[m\n")
 
     escolha = 2
 
@@ -48,6 +48,6 @@ while escolha != 1:
         escolha = int(input("Qual a sua escolha? "))
 
         if escolha != 0 and escolha != 1:
-            print( "Informe uma opção válida\n ")
+            print( "\033[1:31mInforme uma opção válida\033[m\n ")
 
 print( "Fim do programa")
