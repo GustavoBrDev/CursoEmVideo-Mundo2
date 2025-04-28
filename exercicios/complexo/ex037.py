@@ -45,12 +45,12 @@ while continuar != 1:
 
     while continuar != 0 and continuar != 1:
 
-        print("------------------------------")
+        print("\n------------------------------")
         print("0 - Realizar nova conversão")
         print("1 - Encerrar programa ")
         print("------------------------------")
 
-        continuar = int(input("Qual a sua escolha? "))
+        continuar = int(input("\nQual a sua escolha? "))
 
         if continuar != 0 and continuar != 1:
             print("\033[1:31mInforme uma opção válida\033[m\n ")

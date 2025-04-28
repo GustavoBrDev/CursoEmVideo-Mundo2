@@ -40,12 +40,12 @@ while escolha != 1:
 
     while escolha != 0 and escolha != 1:
 
-        print("------------------------------")
+        print("\n------------------------------")
         print("0 - Realizar nova consultoria")
         print("1 - Encerrar programa ")
         print("------------------------------")
 
-        escolha = int(input("Qual a sua escolha? "))
+        escolha = int(input("\nQual a sua escolha? "))
 
         if escolha != 0 and escolha != 1:
             print( "\033[1:31mInforme uma opção válida\033[m\n ")
