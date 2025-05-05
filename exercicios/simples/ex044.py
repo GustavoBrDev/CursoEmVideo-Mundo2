@@ -30,15 +30,22 @@ if escolha == 1:
 elif escolha == 2:
 
     total = valor
+    print(f"\nO valor da parcela é de R$ {total / 2:.2f}")
 
 elif escolha == 3:
 
-    total = valor + valor * 0.2
+    total = valor * 1.2
+    parcelas = int(input("\nInforme o número de parcelas: "))
+
+    if parcelas >= 3:
+        print(f"\nO valor da parcela é de R$ {total / parcelas:.2f}")
+    else:
+        print("Informe uma opção válida")
 
 else:
     print("Informe uma opção válida")
 
 if total != 0 :
-    print(f"O valor total é de R$ {total:.2f}")
+    print(f"\nO valor total é de R$ {total:.2f}")
 
 print("Encerrando...")
