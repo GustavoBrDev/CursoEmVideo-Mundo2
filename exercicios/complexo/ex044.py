@@ -6,13 +6,13 @@ while escolha != 0:
 
   while valor <= 0:
      valor = float ( input("Informe o preço do produto: R$ "))
-    
+
      if valor <= 0:
         print("\033[1:31mInforme um valor válido\033[m")
-       
+
   total = 0
   escolha = 4
-  
+
   while escolha != 0 and escolha != 1 and escolha != 2 and escolha != 3:
 
     print("\n" + '=' * 20)
@@ -57,13 +57,23 @@ while escolha != 0:
             break
           case 2:
             total = valor
+            print( f"\nO valor da parcela é de R$ {total / 2:.2f}")
             break
           case 3:
+            parcelas = 0
+
+            while parcelas < 3:
+              parcelas = int(input("Informe a quantidade de parcelas: "))
+
+              if parcelas < 3:
+                print("\033[1:31mInforme uma quantidade de parcelas válida\033[m")
+
             total = valor * 1.2
+            print(f"\nO valor da parcela é de R$ {total / parcelas:.2f}")
             break
           case _:
             print("\033[1:31mInforme uma opção válida\033[m")
-  
+
   if total != 0 :
-      print(f"O valor total é de R$ {total:.2f}")
-  
+      print(f"O valor total é de R$ {total:.2f}\n")
+
