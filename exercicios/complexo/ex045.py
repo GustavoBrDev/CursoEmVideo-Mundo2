@@ -29,7 +29,7 @@ while escolha != 0:
     escolha = int ( input ( "\nEscolha uma opção: " ) )
 
     if escolha < 0 or escolha > 3:
-      print ( "\n\033[1:31mOpção inválida, tente novamente[033[m" )
+      print ( "\n\033[1:31mOpção inválida, tente novamente\033[m" )
     
   computador = random.randint ( 1, 3 )
 
@@ -76,7 +76,7 @@ while escolha != 0:
         jogadas[1][2] += 1
         vitorias [1] += 1
         print ( "\nComputador escolheu TESOURA" )
-        print ( "COMPUTADOR VENCE" )
+        print("\033[1:31mCOMPUTADOR VENCE\033[m")
     case 3:
       print ( "\n\033[1:34mVocê escolheu TESOURA\033[m" )
       jogadas[0][2] += 1
@@ -113,9 +113,10 @@ print ( f"| COMPUTADOR |    {vitorias[1]}     |    {vitorias[0]}    | { round ( 
 print ( '=' * 50 )
 
 # OUTROS RESULTADOS
-print ( "\n" + '=' * 10 )
+print ( "\n" + '=' * 15 )
 print ( f"| EMPATES | {vitorias[2]} |" )
 print ( f"| TOTAL   | {vitorias[0] + vitorias[1] + vitorias[2]} |" )
+print ( '=' * 15 )
 
 if vitorias[0] != vitorias[1]:
   print ( "\nO VENCENDOR É ...")
